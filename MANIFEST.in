@@ -3,3 +3,4 @@ include dash_wordcloud_component/dash_wordcloud_component.dev.js
 include dash_wordcloud_component/metadata.json
 include dash_wordcloud_component/package.json
 include README.md
+include dash_wordcloud_component/wordcloud.css
