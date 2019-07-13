@@ -1,6 +1,6 @@
 {
   "src/lib/components/Wordcloud.react.js": {
-    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
+    "description": "Wordcloud is a wordcloud component.\nIt takes in a text with words separated\nby spaces and turns it into a cloud of\nrandomly placed words.\n\nMuch of this code is taken from or inspired by: https://codepen.io/stevn/pen/JdwNgw",
     "displayName": "Wordcloud",
     "methods": [],
     "props": {
@@ -18,18 +18,36 @@
         "required": false,
         "description": ""
       },
-      "options": {
+      "minFontSize": {
         "type": {
-          "name": "arrayOf",
-          "value": {
-            "name": "custom",
-            "raw": "PropTypes.exact({\n  hoverInfo: PropTypes.string,\n\n  colors: PropTypes.arrayOf(PropTypes.string)\n})"
-          }
+          "name": "number"
         },
         "required": false,
         "description": "",
         "defaultValue": {
-          "value": "[{hoverInfo: \"\", colors: [\"#33638D\", \"#21908D\", \"#A0DA39\", \"#4CC26C\", \"#D2E21B\", \"#450559\", \"#46337F\", \"#3F4889\"]}]",
+          "value": "10",
+          "computed": false
+        }
+      },
+      "maxFontSize": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "160",
+          "computed": false
+        }
+      },
+      "font": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "\"sans-serif\"",
           "computed": false
         }
       },
@@ -45,7 +63,11 @@
           "name": "object"
         },
         "required": false,
-        "description": ""
+        "description": "",
+        "defaultValue": {
+          "value": "{'width':'1100px', 'height':'800px'}",
+          "computed": false
+        }
       },
       "setProps": {
         "type": {
