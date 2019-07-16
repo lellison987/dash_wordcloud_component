@@ -16,14 +16,14 @@
           "name": "string"
         },
         "required": false,
-        "description": ""
+        "description": "The className used to identify the component"
       },
       "minFontSize": {
         "type": {
           "name": "number"
         },
         "required": false,
-        "description": "",
+        "description": "The minimum font size for the word cloud.\nDefault: 10",
         "defaultValue": {
           "value": "10",
           "computed": false
@@ -34,7 +34,7 @@
           "name": "number"
         },
         "required": false,
-        "description": "",
+        "description": "The maximum font size for the word cloud.\nDefault: 160",
         "defaultValue": {
           "value": "160",
           "computed": false
@@ -45,7 +45,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "",
+        "description": "The font family for the word cloud.\nDefualt: \"sans-serif\"",
         "defaultValue": {
           "value": "\"sans-serif\"",
           "computed": false
@@ -56,14 +56,14 @@
           "name": "string"
         },
         "required": false,
-        "description": ""
+        "description": "The words to be put into the word cloud.\nThese should be in a string with no extra\nsymbols.\n\nNote: the word cloud IS case sensitive, so\nmake the text all lower-case if necessary"
       },
       "style": {
         "type": {
           "name": "object"
         },
         "required": false,
-        "description": "",
+        "description": "CSS for the wordcloud. Width and height should be set\nDefault: {'width':'1100px', 'height':'800px'}",
         "defaultValue": {
           "value": "{'width':'1100px', 'height':'800px'}",
           "computed": false
@@ -74,7 +74,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Don't change this. It allows the props to load."
       },
       "loading_state": {
         "type": {

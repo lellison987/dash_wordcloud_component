@@ -12,7 +12,8 @@
   padding: 10px;
   position: absolute;
   z-index: 1;
-  left: 105%;
+  left: 50%;
+  bottom: 105%;
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -20,8 +21,8 @@
 .tooltip .tooltiptext::after {
   content: " ";
   position: absolute;
-  top: 50%;
-  right: 100%; /* To the left of the tooltip */
+  left: 50%;
+  top: 100%;
   margin-top: -5px;
   border-width: 5px;
   border-style: solid;
